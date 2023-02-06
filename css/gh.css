@@ -1,0 +1,99 @@
+.gach_chan {
+    height: 3px;
+    background-image: linear-gradient(to right, #fff, #cddc39 83px, #fff 166px);
+    background-size: 166px 100%;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+}
+.gach{
+    border: 1 px solid #292929;
+}
+main{
+    border-radius: 5px;
+
+}
+.form-khung1{
+    width: 1000px;
+    /* border:  1px solid #292929; */
+    margin: 0 auto;
+}
+.form-khung1 img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.form-khhung1 .form-sp1{
+    border: #292929;
+}
+#don_hang{
+    margin-top: 10px;
+}
+.icon-pink{
+    padding: 2px 7px;
+    background-color: #f3f4f0;
+    color: #292929;
+    cursor: pointer;
+    height: 20px;
+}
+.main-content {
+    margin-top: 5rem;
+    border: 1px soid black;
+    border-radius: 10px;
+}
+.main-content h1{
+    text-align: center;
+}
+#cartDetail{
+    border:  1px solid #292929;
+    border-radius: 10px;
+}
+#cartDetail tr {
+    border:  1px solid #292929;
+    left: 1;
+    padding-left: 20px;
+
+}
+.form-group1 {
+    /* padding-left: 150px; */
+    text-align: center;
+}
+.form-group3 p{
+    text-align: right;
+}
+.form-group4 p{
+    text-align: right;
+}
+.form-group5 p{
+    text-align: right;
+}
+
+.form-khung2{
+    width: 1000px;
+
+}
+#dongia{
+    width: 1000px;
+    margin-top: 10px;
+    padding-right: 20px;
+    background-color: #b5b3b0;
+    border-radius: 10px;
+    
+}
+#dongia td{
+    text-align: right;
+    /* color: rgb(72, 48, 26); */
+    /* color:aliceblue; */
+    font-weight: 600;
+}
+.form-submit{
+    border-radius: 5px;
+    background: rgb(203, 196, 185);
+    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.1);
+    margin: auto;
+    text-decoration: none;
+    padding: 4px 6px;
+}
+.form-a1{
+    text-align: center;
+    padding-bottom: 20px;
+}

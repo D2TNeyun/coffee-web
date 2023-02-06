@@ -1,0 +1,98 @@
+
+.contact .contact-info-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 6rem;
+    
+  }
+  
+  .contact .contact-info-container .box {
+    border: 0.1rem solid #212529;
+    padding: 1rem 0.5rem;
+    border: 0.1rem solid #212529;
+    text-align: center;
+  }
+  
+  .contact .contact-info-container .box:hover i {
+    background: #212529;
+    color: #fff;
+  }
+  
+  .contact .contact-info-container .box i {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    border: 0.1rem solid #512a10;
+    color: #512a10;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact .contact-info-container .box h3 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #222;
+    padding: 1rem 0;
+  }
+  
+  .contact .contact-info-container .box p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #666;
+    margin-bottom: 0px;
+  }
+  
+  .contact form h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #222;
+    padding-bottom: 1rem;
+  }
+  
+  .contact form .box {
+    margin: .6rem 0;
+    border: 0.1rem solid #512a10;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+  
+  .contact form .box:focus {
+    background: #8899a9;
+    color: #fff;
+  }
+  
+  .contact form .box:focus::-webkit-input-placeholder {
+    color: #eee;
+  }
+  
+  .contact form .box:focus:-ms-input-placeholder {
+    color: #eee;
+  }
+  
+  .contact form .box:focus::-ms-input-placeholder {
+    color: #eee;
+  }
+  
+  .contact form .box:focus::placeholder {
+    color: #eee;
+  }
+  
+  .contact form textarea {
+    height: 15rem;
+    resize: none;
+  }
+  .submit:hover{
+    color: #fff;
+    background: #512a10;
+  }
+  .submit{
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    margin: auto;
+    text-decoration: none;
+    padding: 2px 4px;
+  }
