@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/gh.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="shortcut icon" href="img/logo_meo.png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"> </script>
+    <script src="js/giohang.js"></script>
+    <script> window.onload=function(){showCart();}; </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+              <div class="logo-left">
+                <img src="img/Picture1.png" width="54" height="54" alt="">
+              </div>
+              <a class="navbar-brand">The Coffe</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sanpham.html">Sản phẩm</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="dangky.htlm">Đăng ký</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="dangnhap.html">Đăng nhập</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="lienhe.html">Liên hệ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header_card">
+                <button class="btn btn-outline-success" onclick="chuyen()" type="submit"> 
+                  <i class="fas fa-shopping-basket"></i>
+                </button>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <div class="form-khung1" >
+        <article class="main-content">
+            <div>
+              <h3 class="cauchao">♥ Chi Tiết Đơn Hàng ♥</h3>
+                      <div class="gach_chan"></div>
+                  </div>
+            <table id="cartDetail" width="100%">
+              <thead class="form1">
+                <tr class="form-group">
+                <th class="form-group1"><p>Hình SP</p></th>
+                <th class="form-group2"><p>Tên sản phẩm</p> </th>
+                <th class="form-group3"><p>Số lượng</p></th>
+                <th class="form-group4"><p>Giá</p></th>
+                <th class="form-group5"><p>Thành Tiền</p> </th>
+                </tr>
+              </thead>
+              <tbody class="form-sp1"></tbody>
+
+            <table id="dongia">
+              <tfoot>
+                <tr><td colspan="6" >Tổng thành tiền (A) = <span id="bill_pre_tax_total"></span></td></tr>
+                <tr><td colspan="6" >Chiết khấu (B) = <span id="bill_discount"></span> </td></tr>
+                <tr><td colspan="6" >Thuế (C) = 10%  (A - B) = <span id="bill_tax"></span> </td></tr>
+                <tr><td colspan="6" >Tổng đơn hàng = A ‒ B + C = <span id="bill_total"></span> </td></tr>
+                <tr><th colspan="6" class="form-a1">
+                  <button type="submit" class="form-submit">Xác Nhận Đơn Hàng</button>
+                </td></tr>
+              </tfoot>
+            </table>        
+          </article>
+      </div>
+    </main>
+     
+    </main>
+     <footer>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <div class="footer">
+      @ Niềm Vui Của Khánh Hàng Là Thành Công Của Chúng Tôi: 
+        <div class="contact-icon">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="#" class="back-top">
+            <img src="img/top.png" alt="">
+        </a>
+    </div>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </footer>
+</body>
+</html>

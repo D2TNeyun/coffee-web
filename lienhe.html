@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/lienhe.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="shortcut icon" href="img/logo_meo.png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"> </script>
+    <script src="js/lienhe.js"></script>
+    <script src="js/giohang.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+              <div class="logo-left">
+                <img src="img/Picture1.png" width="54" height="54" alt="">
+              </div>
+              <a class="navbar-brand">The Coffe</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sanpham.html">Sản phẩm</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="dangky.html">Đăng ký</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="dangnhap.html">Đăng nhập</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="lienhe.html">Liên hệ</a>
+                  </li>
+                </ul>
+              </div>
+              <button class="btn btn-outline-success" onclick="chuyen()" type="submit"> 
+                <i class="fas fa-shopping-basket"></i>           
+              </button>
+            </div>
+          </nav>
+    </header>
+    <main>
+     
+      <section class="contact" id="contact">
+     
+        <div class="container">
+     
+           <div class="contact-info-container">
+     
+              <div class="box">
+                 <i class="fas fa-phone"></i>
+                 <h3>Điện Thoại</h3>
+                 <p>0965204246</p>
+                 <p>0786309903</p>
+              </div>
+        
+              <div class="box">
+                 <i class="fas fa-envelope"></i>
+                 <h3>Email</h3>
+                 <p>contact@gmail.com</p>
+                 <p>thecoffee@gmail.com</p>
+              </div>
+        
+              <div class="box">
+                 <i class="fas fa-map"></i>
+                 <h3>Địa chỉ</h3>
+                 <p>Ninh Kiều - Cần Thơ</p>
+              </div>
+        
+           </div>
+           
+           <div class="row align-items-center">
+           
+              <div class="col-md-6 mb-5 mb-md-0 ">
+                 <iframe class="map w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251373.28614974197!2d105.39211750310317!3d10.12300336840591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0629f927382cd%3A0x72a463d91109ec67!2zQ-G6p24gVGjGoSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1666505502807!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+              <form action=""  class="col-md-6" onsubmit="return validateContact()" method="get">
+              
+                 <h3>Ý Kiến</h3>
+                 <input type="text" placeholder="Your name" class="box" id="username" required>
+                 <input type="email" placeholder="Email" class="box" id="email" required>
+                 <input type="text" placeholder="Phone" class="box" id="telephone" required>
+                 <textarea type="text"name="" placeholder="Message" class="box" id="message" cols="30" rows="10"></textarea>
+                 <!--<input type="submit" value="Send message" class="link-btn"> -->
+                 <button class="submit" type="submit"  >send message</button>
+                
+                
+           </div>
+          </form>
+        </div>
+      
+     </section>
+    </main>
+     <footer>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <div class="footer">
+      @ Niềm Vui Của Khánh Hàng Là Thành Công Của Chúng Tôi: 
+        <div class="contact-icon">
+            <a href="https://www.facebook.com/thekremsolutions/"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="#" class="back-top">
+            <img src="img/top.png" alt="">
+        </a>
+    </div>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </footer>
+</body>
+</html>

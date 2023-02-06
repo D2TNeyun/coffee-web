@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quên mật khẩu</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/dangnhap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="shortcut icon" href="img/logo_meo.png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"> </script>
+    <script src="js/dangnhap.js"></script>
+    <script src="js/giohang.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+              <div class="logo-left">
+                <img src="img/Picture1.png" width="54" height="54" alt="">
+              </div>
+              <a class="navbar-brand">The Coffe</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sanpham.html">Sản phẩm</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="dangky.html">Đăng ký</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="dangnhap.html">Đăng nhập</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="lienhe.html">Liên hệ</a>
+                  </li>
+                </ul>
+              </div>
+              <button class="btn btn-outline-success" onclick="chuyen()" type="submit"> 
+                <i class="fas fa-shopping-basket"></i>           
+              </button>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <div class="form-quenmk">
+        <div id="khung">
+            <form id="form-viencuakhung" onsubmit="return validatequenmk()" action="" method="get">
+                <h1 class="form-heading">Quên mật khẩu<br>The Coffe</h1>
+                <form id="quenmk" action="" method="post" role="form">
+                  <div class="form-group" >
+                    <i class="fa fa-user"></i>
+                    <input type="text" id="username1" name="username" class="form-nhap" placeholder="Tên đăng nhập"required>
+                  </div>
+                  <div class="form-group" id="">
+                    <i class="fa fa-solid fa-key"></i>
+                    <input type="password" id="password3" name="password" class="form-nhap" placeholder="Mật khẩu" required>
+                  </div>
+                  <div class="form-group" id="">
+                    <i class="fa fa-solid fa-key"></i>
+                    <input type="password" id="password4" name="password" class="form-nhap" placeholder="Nhập lại mật khẩu" required>
+                  </div>
+                  <div class="auth-form__controls">
+                    <button class="btn--primary"><a class="upd" >CẬP NHẬT MẬT KHẨU</a></button>
+                    <!-- <button class="btn">TRỞ LẠI</button> -->
+                  </div>
+                </form>
+            </form>
+        </div>
+      </div>
+  </main>
+     <footer>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <div class="footer">
+      @ Niềm Vui Của Khánh Hàng Là Thành Công Của Chúng Tôi: 
+        <div class="contact-icon">
+            <a href="https://www.facebook.com/thekremsolutions/"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="#" class="back-top">
+            <img src="img/top.png" alt="">
+        </a>
+    </div>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </footer>
+</body>
+</html>

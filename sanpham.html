@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/sanpham.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="shortcut icon" href="img/logo_meo.png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"> </script>
+    <script src="js/giohang.js"></script>
+</head>
+<body>
+    <header>
+       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+              <div class="logo-left">
+                <img src="img/Picture1.png" width="54" height="54" alt="">
+              </div>
+              <a class="navbar-brand">The Coffe</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sanpham.html">Sản phẩm</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="dangky.html">Đăng ký</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="dangnhap.html">Đăng nhập</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="lienhe.html">Liên hệ</a>
+                  </li>
+                </ul>
+              </div>
+              <button class="btn btn-outline-success" onclick="chuyen()" type="submit"> 
+                <i class="fas fa-shopping-basket"></i>          
+              </button>
+            </div>
+          </nav>
+    </header>
+    <main>
+       
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/hinh_nen.jpg" width="1190" height="600" class="d-block w-100" alt="...">               
+          </div>
+          <div class="carousel-item">
+            <img src="img/cf-cam-trai.jpg" width="1190" height="600" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="banner">Cùng bạn bè - đồng nghiệp</h4>
+              <p class="sologan">Tăng tốc - Bứt phá - Làm chủ tương lai.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/khuyenmaii.PNG" width="1190" height="600" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="banner">25/12/2022!!!</h4>
+              <p class="sologan">Nhân ngày giáng sinh THE COFFE có chương trình ưu đãi sale 50%</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <hr class="featurette-divider">
+      <h3 class="cauchao"> (っ◔◡◔)っ ♥ SẢN PHẨM ♥</h3>
+      <Ul class="products">
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="img/sanpham/ca_phe.jpg" alt="" >
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h5>Cà phê đen đá</h5>
+                    <div class="product-price">15.000đ</div>
+                    <span>
+                        <label>Số lượng</label>
+                        <input id="sp001" type="number" value="0" max="100" min="1" size="3" onKeyDown="return false">
+                        <button class="click" onclick="addCart('sp001')">Đặt hàng</button>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="img/sanpham/ca-phe-sua.jpg" alt="" >
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h5>Cà phê sữa đá</h5>
+                    <div class="product-price">19.000đ</div>
+                    <span>
+                        <label>Số lượng</label>
+                        <input id="sp002" type="number" value="0" max="100" min="1" size="3" onKeyDown="return false">
+                        <button class="click" onclick="addCart('sp002')">Đặt hàng</button>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="img/sanpham/bac-xiu-da.jpg" alt="" >
+                    </a>
+                </div>
+                <div class="product-info">
+                  <h5>Bạc xỉu</h5>
+                    <div class="product-price">19.000đ</div>
+                    <span>
+                        <label>Số lượng</label>
+                        <input id="sp003" type="number" value="0" max="100" min="1" size="3" onKeyDown="return false">
+                        <button class="click" onclick="addCart('sp003')">Đặt hàng</button>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb"> 
+                      <img src="img/sanpham/ca_cao.jpg" alt="" > 
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h5>CaCao đá xây</h5>
+                    <div class="product-price">25.000đ</div>
+                    <span>
+                        <label>Số lượng</label>
+                        <input id="sp004" type="number" value="0" max="100" min="1" size="3" onKeyDown="return false">
+                        <button class="click" onclick="addCart('sp004')">Đặt hàng</button>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="img/sanpham/viet_quat.jpg" alt="" >
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h5>Việt quốc đá xay</h5>
+                    <div class="product-price">25.000đ</div>
+                    <span>
+                        <label>Số lượng</label>
+                        <input id="sp005" type="number" value="0" max="100" min="1" size="3" onKeyDown="return false">
+                        <button class="click" onclick="addCart('sp005')">Đặt hàng</button>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="img/sanpham/espreso.jpg" alt="" >
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h5>Espreso</h5>
+                        <div class="product-price">40.000đ</div>
+                        <span>
+                            <label>Số lượng</label>
+                            <input id="sp006" type="number" value="0" max="100" min="1" size="3" onKeyDown="return false">
+                            <button class="click" onclick="addCart('sp006')">Đặt hàng</button>
+                        </span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="img/sanpham/hong_tra.jpg" alt="" >
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h5>Hồng trà trân châu</h5>
+                    <div class="product-price">25.000đ</div>
+                    <span>
+                        <label>Số lượng</label>
+                        <input id="sp007" type="number" value="0" max="100" min="1" size="3" onKeyDown="return false">
+                        <button class="click" onclick="addCart('sp007')">Đặt hàng</button>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="img/sanpham/tra_sua_tt.jpg" alt="" >
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h5>Trà sữa truyền thống</h5>
+                    <div class="product-price">25.000đ</div>
+                    <span>
+                        <label>Số lượng</label>
+                        <input id="sp008" type="number" value="0" max="100" min="1" size="3" onKeyDown="return false">
+                        <button class="click" onclick="addCart('sp008')">Đặt hàng</button>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="img/sanpham/tra_sua_thai.png" alt="" >
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h5>Trà sữa thái xanh</h5>
+                    <div class="product-price">25.000đ</div>
+                    <span>
+                        <label>Số lượng</label>
+                        <input id="sp009" type="number" value="0" max="100" min="1" size="3" onKeyDown="return false">
+                        <button class="click" onclick="addCart('sp009')">Đặt hàng</button>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="img/sanpham/tra-lai-dac-thom.jpg" alt="" >
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h5>Trà Lài đác thơm</h5>
+                    <div class="product-price">25.000đ</div>
+                    <span>
+                        <label>Số lượng</label>
+                        <input id="sp0010" type="number" value="0" max="100" min="1" size="3" onKeyDown="return false">
+                        <button class="click" onclick="addCart('sp0010')">Đặt hàng</button>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="img/sanpham/tra-nhan-1.jpg" alt="" >
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h5>Trà nhãn lài</h5>
+                    <div class="product-price">25.000đ</div>
+                    <span>
+                        <label>Số lượng</label>
+                        <input id="sp0011" type="number" value="0" max="100" min="1" size="3" onKeyDown="return false">
+                        <button class="click" onclick="addCart('sp0011')">Đặt hàng</button>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="img/sanpham/batch_tra-viet-quat-1.jpg" alt="" >
+                    </a>
+                </div>
+                <div class="product-info">
+                   <h5>Trà việt quất</h5>
+                    <div class="product-price">25.000đ</div>
+                    <span>
+                        <label>Số lượng</label>
+                        <input id="sp0012" type="number" value="0" max="100" min="1" size="3" onKeyDown="return false">
+                        <button class="click" onclick="addCart('sp0012')">Đặt hàng</button>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="img/sanpham/sinh-to-bo.jpg" alt="" >
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h5>Sinh tố bơ</h5>
+                    <div class="product-price">20.000đ</div>
+                    <span>
+                        <label>Số lượng</label>
+                        <input id="sp0013" type="number" value="0" max="100" min="1" size="3" onKeyDown="return false">
+                        <button class="click" onclick="addCart('sp0013')">Đặt hàng</button>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="img/sanpham/sinhtodau.jpg" alt="" >
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h5>Sinh tố dâu</h5>
+                    <div class="product-price">20.000đ</div>
+                    <span>
+                        <label>Số lượng</label>
+                        <input id="sp0014" type="number" value="0" max="100" min="1" size="3" onKeyDown="return false">
+                        <button class="click" onclick="addCart('sp0014')">Đặt hàng</button>
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="img/sanpham/samboche.jpg" alt="" >
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h5>Sinh tố Samboche</h5>
+                    <div class="product-price">20.000đ</div>
+                    <span>
+                        <label>Số lượng</label>
+                        <input id="sp0015" type="number" value="0" max="100" min="1" size="3" onKeyDown="return false">
+                        <button class="click" onclick="addCart('sp0015')">Đặt hàng</button>
+                    </span>
+                </div>
+            </div>
+        </li>
+    </Ul>
+
+    </main>
+     <footer>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <div class="footer">
+      @ Niềm Vui Của Khánh Hàng Là Thành Công Của Chúng Tôi: 
+        <div class="contact-icon">
+            <a href="https://www.facebook.com/thekremsolutions/"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="#" class="back-top">
+            <img src="img/top.png" alt="">
+        </a>
+    </div>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </footer>
+</body>
+</html>
